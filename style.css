@@ -1,3 +1,7 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     height: 1000vh;
     padding: 0;
@@ -48,7 +52,6 @@ a {
 }
 
 .left {
-    padding-top: 3px;
     padding-left: 3px;
     font-size: 1.7rem;
     font-weight: 600;
@@ -57,7 +60,7 @@ a {
 .right {
     display: flex;
     justify-content: space-between;
-    padding-top: 11px;
+    padding-top: 9px;
     font-weight: 500;
     width: 100px;
     margin-right: 30px;
@@ -85,6 +88,16 @@ a {
     font-size: 5rem;
     font-weight: 850;
     color: white;
+}
+
+@media only screen and (max-width: 494px) {
+    .holistic{
+        font-size:50px;
+    }
+
+    .curriculum{
+        font-size:60px;
+    }
 }
 
 .a {
@@ -145,7 +158,7 @@ a {
 }
 
 .section3>.content2 {
-    font-size: 1.3rem;
+    font-size: 16px;
     font-weight: 600;
     padding-top: 20px;
 }
@@ -178,7 +191,7 @@ a {
 }
 
 .section4>.content2 {
-    font-size: 1.3rem;
+    font-size: 16px;
     font-weight: 500;
     padding-top: 20px;
     color: #fff;
@@ -207,12 +220,12 @@ a {
 }
 
 .section5>.content1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .section5>.content2 {
-    font-size: 1.3rem;
+    font-size: 16px;
     font-weight: 600;
     padding-top: 20px;
 }
@@ -239,13 +252,13 @@ a {
 }
 
 .section6>.content1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #fff;
 }
 
 .section6>.content2 {
-    font-size: 1.3rem;
+    font-size: 16px;
     font-weight: 500;
     padding-top: 20px;
     color: #fff;
@@ -479,16 +492,16 @@ a {
         transform: translateX(-50%);
     }
     .section2>.content1 {
-        font-size: 18px;
+        font-size: 14px;
     }
     .section2>.content2 {
-        font-size: 22px;
+        font-size: 18px;
     }
     .section3>.content1, .section4>.content1, .section5>.content1, .section6>.content1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .section3>.content2, .section4>.content2, .section5>.content2, .section6>.content2 {
-        font-size: 18px;
+        font-size: 12px;
     }
     .section1-container {
         background: url("/anim/main_00000-min.png");
@@ -522,7 +535,7 @@ a {
         font-size: 20px;
     }
     .section3>.content2, .section4>.content2, .section5>.content2, .section6>.content2 {
-        font-size: 16px;
+        font-size: 12px;
         padding-top: 5px;
     }
     .section1-container {
@@ -582,7 +595,7 @@ a {
 
 .floating-button-text{
     position: relative;
-    top:-80px;
+    top:-85px;
     display: block;
     margin: 0 auto 0 auto;
     width: fit-content;
@@ -609,7 +622,7 @@ a {
 
 .section9-text{
     display:block;
-    font-size: 18px;
+    font-size: 16px;
     width:500px;
     margin:0 auto 0 auto;
     text-align: center;
@@ -636,7 +649,7 @@ a {
         font-size:24px;
     }
     .section9-text{
-        font-size: 16px;
+        font-size: 12px;
         width:300px
     }
     .certifications-container{
@@ -657,7 +670,7 @@ a {
 
 .section10-text{
     display:block;
-    font-size: 18px;
+    font-size: 16px;
     width:500px;
     margin:0 auto 0 auto;
     text-align: center;
@@ -710,7 +723,7 @@ a {
     }
 
     .section10-text{
-        font-size:16px;
+        font-size:12px;
         width:300px;
     }
     .testimonial-img{
@@ -720,7 +733,7 @@ a {
     .testimonial-text{
         width:200px;
         margin-top: 0px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .testimonial-item{
