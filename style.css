@@ -75,6 +75,8 @@ a {
     line-height: 350%;
     width: 100vw;
     height: 100vh;
+    background: url('anim/main_00000-min.png');
+    background-size: cover;
 }
 
 .holistic {
@@ -307,7 +309,7 @@ a {
     width: 100vw;
     height: 100vh;
 }
-
+/* 
 .anim img {
     max-width: 100%;
     display: none;
@@ -315,7 +317,7 @@ a {
     top: -80px;
     z-index: 1000;
     object-fit: cover;
-}
+} */
 
 .anim-mobile {
     width: 100vw;
@@ -1623,4 +1625,80 @@ a {
     .footer-form-container {
         margin-top: 30px;
     }
+}
+
+
+
+
+
+.capsule-top{
+    position: fixed;
+    top:-300px;
+    left:65%;
+    z-index: 1001;
+    width:200px;
+}
+
+.capsule-bottom{
+    position: fixed;
+    top:100vh;
+    left:65%;
+    z-index: 1001;
+    width:200px;
+}
+
+.cells{
+    position: fixed;
+    top:200px;
+    left:1100px;
+    z-index: 1000
+}
+
+.cap{
+    position: fixed;
+    top:-200px;
+    left:40%;
+    z-index: 1003;
+    width:280px;
+}
+
+.bottle{
+    position: fixed;
+    top:100vh;
+    left:40%;
+    transform: translateX(-50%);
+    z-index: 1002;
+    width:280px;
+}
+
+.leaf{
+    position: fixed;
+    top:27%;
+    left:67%;
+    z-index: 1002;
+    width:200px;
+    opacity: 0;
+}
+.powder{
+    position: fixed;
+    top:40%;
+    left:65%;
+    z-index: 1002;
+    width:250px;
+    opacity: 0;
+}
+
+#dna{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+#cells{
+    position: fixed;
+    top:0;
+    left:0;
+    opacity:0;
+    z-index:1000
 }

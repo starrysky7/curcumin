@@ -1,0 +1,210 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.3.48",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere.002_Sphere.001"
+        },
+        {
+            "mesh" : 1,
+            "name" : "Sphere.001_Sphere.003_Sphere.001_Sphere.001",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "capsule02.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.3095709979534149,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0.2227270007133484,
+                "roughnessFactor" : 0.05940890312194824
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "capsule01.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.3095709979534149,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0.2227270007133484,
+                "roughnessFactor" : 0.05940890312194824
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.002_Sphere.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 0,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Sphere.001_Sphere.003_Sphere.001_Sphere.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 1,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 7,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "componentType" : 5126,
+            "count" : 3947,
+            "max" : [
+                -0.1410011351108551,
+                0.07259887456893921,
+                0.07535678148269653
+            ],
+            "min" : [
+                -0.35322216153144836,
+                -0.07289811968803406,
+                -0.07296019792556763
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3947,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3947,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 20502,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3700,
+            "max" : [
+                0.08905616402626038,
+                0.07545244693756104,
+                0.07664293050765991
+            ],
+            "min" : [
+                -0.15025585889816284,
+                -0.0800485610961914,
+                -0.07562907040119171
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3700,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 3700,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 20505,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 32058,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31251,
+            "byteOffset" : 32060
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 63312,
+            "uri" : "Dna strand.bin"
+        }
+    ]
+}

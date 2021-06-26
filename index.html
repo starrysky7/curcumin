@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap"
-                rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/three@0.87.1/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/loaders/GLTFLoader.js"></script>
     <title>Document</title>
 </head>
 
@@ -47,7 +50,8 @@
     </div>
     <div class="section10-bg">
         <span class="section10-title">Testimonials</span>
-        <span class="section10-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla leo vitae
+        <span class="section10-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla leo
+            vitae
             nibh laoreet dictum. Fusce volutpat metus risus, at aliquet ex venenatis sit amet. Vestibulum ultrices nec
             urna vitae faucibus. Aenean semper risus in diam tincidunt volutpat.</span>
         <div class="testimonial-container">
@@ -242,581 +246,659 @@
 
 
     <div class="anim">
-        <img src="/anim/main_00001-min.png" alt="" class="i1 show">
-        <img src="/anim/main_00002-min.png" alt="" class="i2">
-        <img src="/anim/main_00003-min.png" alt="" class="i3">
-        <img src="/anim/main_00004-min.png" alt="" class="i4">
-        <img src="/anim/main_00005-min.png" alt="" class="i5">
-        <img src="/anim/main_00006-min.png" alt="" class="i6">
-        <img src="/anim/main_00007-min.png" alt="" class="i7">
-        <img src="/anim/main_00008-min.png" alt="" class="i8">
-        <img src="/anim/main_00009-min.png" alt="" class="i9">
-        <img src="/anim/main_00010-min.png" alt="" class="i10 ">
-        <img src="/anim/main_00011-min.png" alt="" class="i11 ">
-        <img src="/anim/main_00012-min.png" alt="" class="i12 ">
-        <img src="/anim/main_00013-min.png" alt="" class="i13 ">
-        <img src="/anim/main_00014-min.png" alt="" class="i14 ">
-        <img src="/anim/main_00015-min.png" alt="" class="i15 ">
-        <img src="/anim/main_00016-min.png" alt="" class="i16 ">
-        <img src="/anim/main_00017-min.png" alt="" class="i17 ">
-        <img src="/anim/main_00018-min.png" alt="" class="i18 ">
-        <img src="/anim/main_00019-min.png" alt="" class="i19 ">
-        <img src="/anim/main_00020-min.png" alt="" class="i20 ">
-        <img src="/anim/main_00021-min.png" alt="" class="i21 ">
-        <img src="/anim/main_00022-min.png" alt="" class="i22 ">
-        <img src="/anim/main_00023-min.png" alt="" class="i23 ">
-        <img src="/anim/main_00024-min.png" alt="" class="i24 ">
-        <img src="/anim/main_00025-min.png" alt="" class="i25 ">
-        <img src="/anim/main_00026-min.png" alt="" class="i26 ">
-        <img src="/anim/main_00027-min.png" alt="" class="i27 ">
-        <img src="/anim/main_00028-min.png" alt="" class="i28 ">
-        <img src="/anim/main_00029-min.png" alt="" class="i29 ">
-        <img src="/anim/main_00030-min.png" alt="" class="i30 ">
-        <img src="/anim/main_00031-min.png" alt="" class="i31 ">
-        <img src="/anim/main_00032-min.png" alt="" class="i32 ">
-        <img src="/anim/main_00033-min.png" alt="" class="i33 ">
-        <img src="/anim/main_00034-min.png" alt="" class="i34 ">
-        <img src="/anim/main_00035-min.png" alt="" class="i35 ">
-        <img src="/anim/main_00036-min.png" alt="" class="i36 ">
-        <img src="/anim/main_00037-min.png" alt="" class="i37 ">
-        <img src="/anim/main_00038-min.png" alt="" class="i38 ">
-        <img src="/anim/main_00039-min.png" alt="" class="i39 ">
-        <img src="/anim/main_00040-min.png" alt="" class="i40 ">
-        <img src="/anim/main_00041-min.png" alt="" class="i41 ">
-        <img src="/anim/main_00042-min.png" alt="" class="i42 ">
-        <img src="/anim/main_00043-min.png" alt="" class="i43 ">
-        <img src="/anim/main_00044-min.png" alt="" class="i44 ">
-        <img src="/anim/main_00045-min.png" alt="" class="i45 ">
-        <img src="/anim/main_00046-min.png" alt="" class="i46 ">
-        <img src="/anim/main_00047-min.png" alt="" class="i47 ">
-        <img src="/anim/main_00048-min.png" alt="" class="i48 ">
-        <img src="/anim/main_00049-min.png" alt="" class="i49 ">
-        <img src="/anim/main_00050-min.png" alt="" class="i50 ">
-        <img src="/anim/main_00051-min.png" alt="" class="i51 ">
-        <img src="/anim/main_00052-min.png" alt="" class="i52 ">
-        <img src="/anim/main_00053-min.png" alt="" class="i53 ">
-        <img src="/anim/main_00054-min.png" alt="" class="i54 ">
-        <img src="/anim/main_00055-min.png" alt="" class="i55 ">
-        <img src="/anim/main_00056-min.png" alt="" class="i56 ">
-        <img src="/anim/main_00057-min.png" alt="" class="i57 ">
-        <img src="/anim/main_00058-min.png" alt="" class="i58 ">
-        <img src="/anim/main_00059-min.png" alt="" class="i59 ">
-        <img src="/anim/main_00060-min.png" alt="" class="i60 ">
-        <img src="/anim/main_00061-min.png" alt="" class="i61 ">
-        <img src="/anim/main_00062-min.png" alt="" class="i62 ">
-        <img src="/anim/main_00063-min.png" alt="" class="i63 ">
-        <img src="/anim/main_00064-min.png" alt="" class="i64 ">
-        <img src="/anim/main_00065-min.png" alt="" class="i65 ">
-        <img src="/anim/main_00066-min.png" alt="" class="i66 ">
-        <img src="/anim/main_00067-min.png" alt="" class="i67 ">
-        <img src="/anim/main_00068-min.png" alt="" class="i68 ">
-        <img src="/anim/main_00069-min.png" alt="" class="i69 ">
-        <img src="/anim/main_00070-min.png" alt="" class="i70 ">
-        <img src="/anim/main_00071-min.png" alt="" class="i71 ">
-        <img src="/anim/main_00072-min.png" alt="" class="i72 ">
-        <img src="/anim/main_00073-min.png" alt="" class="i73 ">
-        <img src="/anim/main_00074-min.png" alt="" class="i74 ">
-        <img src="/anim/main_00075-min.png" alt="" class="i75 ">
-        <img src="/anim/main_00076-min.png" alt="" class="i76 ">
-        <img src="/anim/main_00077-min.png" alt="" class="i77 ">
-        <img src="/anim/main_00078-min.png" alt="" class="i78 ">
-        <img src="/anim/main_00079-min.png" alt="" class="i79 ">
-        <img src="/anim/main_00080-min.png" alt="" class="i80 ">
-        <img src="/anim/main_00081-min.png" alt="" class="i81 ">
-        <img src="/anim/main_00082-min.png" alt="" class="i82 ">
-        <img src="/anim/main_00083-min.png" alt="" class="i83 ">
-        <img src="/anim/main_00084-min.png" alt="" class="i84 ">
-        <img src="/anim/main_00085-min.png" alt="" class="i85 ">
-        <img src="/anim/main_00086-min.png" alt="" class="i86 ">
-        <img src="/anim/main_00087-min.png" alt="" class="i87 ">
-        <img src="/anim/main_00088-min.png" alt="" class="i88 ">
-        <img src="/anim/main_00089-min.png" alt="" class="i89 ">
-        <img src="/anim/main_00090-min.png" alt="" class="i90 ">
-        <img src="/anim/main_00091-min.png" alt="" class="i91 ">
-        <img src="/anim/main_00092-min.png" alt="" class="i92 ">
-        <img src="/anim/main_00093-min.png" alt="" class="i93 ">
-        <img src="/anim/main_00094-min.png" alt="" class="i94 ">
-        <img src="/anim/main_00095-min.png" alt="" class="i95 ">
-        <img src="/anim/main_00096-min.png" alt="" class="i96 ">
-        <img src="/anim/main_00097-min.png" alt="" class="i97 ">
-        <img src="/anim/main_00098-min.png" alt="" class="i98 ">
-        <img src="/anim/main_00099-min.png" alt="" class="i99 ">
-        <img src="/anim/main_00100-min.png" alt="" class="i100 ">
-        <img src="/anim/main_00101-min.png" alt="" class="i101 ">
-        <img src="/anim/main_00102-min.png" alt="" class="i102 ">
-        <img src="/anim/main_00103-min.png" alt="" class="i103 ">
-        <img src="/anim/main_00104-min.png" alt="" class="i104 ">
-        <img src="/anim/main_00105-min.png" alt="" class="i105 ">
-        <img src="/anim/main_00106-min.png" alt="" class="i106 ">
-        <img src="/anim/main_00107-min.png" alt="" class="i107 ">
-        <img src="/anim/main_00108-min.png" alt="" class="i108 ">
-        <img src="/anim/main_00109-min.png" alt="" class="i109 ">
-        <img src="/anim/main_00110-min.png" alt="" class="i110 ">
-        <img src="/anim/main_00111-min.png" alt="" class="i111 ">
-        <img src="/anim/main_00112-min.png" alt="" class="i112 ">
-        <img src="/anim/main_00113-min.png" alt="" class="i113 ">
-        <img src="/anim/main_00114-min.png" alt="" class="i114 ">
-        <img src="/anim/main_00115-min.png" alt="" class="i115 ">
-        <img src="/anim/main_00116-min.png" alt="" class="i116 ">
-        <img src="/anim/main_00117-min.png" alt="" class="i117 ">
-        <img src="/anim/main_00118-min.png" alt="" class="i118 ">
-        <img src="/anim/main_00119-min.png" alt="" class="i119 ">
-        <img src="/anim/main_00120-min.png" alt="" class="i120 ">
-        <img src="/anim/main_00121-min.png" alt="" class="i121 ">
-        <img src="/anim/main_00122-min.png" alt="" class="i122 ">
-        <img src="/anim/main_00123-min.png" alt="" class="i123 ">
-        <img src="/anim/main_00124-min.png" alt="" class="i124 ">
-        <img src="/anim/main_00125-min.png" alt="" class="i125 ">
-        <img src="/anim/main_00126-min.png" alt="" class="i126 ">
-        <img src="/anim/main_00127-min.png" alt="" class="i127 ">
-        <img src="/anim/main_00128-min.png" alt="" class="i128 ">
-        <img src="/anim/main_00129-min.png" alt="" class="i129 ">
-        <img src="/anim/main_00130-min.png" alt="" class="i130 ">
-        <img src="/anim/main_00131-min.png" alt="" class="i131 ">
-        <img src="/anim/main_00132-min.png" alt="" class="i132 ">
-        <img src="/anim/main_00133-min.png" alt="" class="i133 ">
-        <img src="/anim/main_00134-min.png" alt="" class="i134 ">
-        <img src="/anim/main_00135-min.png" alt="" class="i135 ">
-        <img src="/anim/main_00136-min.png" alt="" class="i136 ">
-        <img src="/anim/main_00137-min.png" alt="" class="i137 ">
-        <img src="/anim/main_00138-min.png" alt="" class="i138 ">
-        <img src="/anim/main_00139-min.png" alt="" class="i139 ">
-        <img src="/anim/main_00140-min.png" alt="" class="i140 ">
-        <img src="/anim/main_00141-min.png" alt="" class="i141 ">
-        <img src="/anim/main_00142-min.png" alt="" class="i142 ">
-        <img src="/anim/main_00143-min.png" alt="" class="i143 ">
-        <img src="/anim/main_00144-min.png" alt="" class="i144 ">
-        <img src="/anim/main_00145-min.png" alt="" class="i145 ">
-        <img src="/anim/main_00146-min.png" alt="" class="i146 ">
-        <img src="/anim/main_00147-min.png" alt="" class="i147 ">
-        <img src="/anim/main_00148-min.png" alt="" class="i148 ">
-        <img src="/anim/main_00149-min.png" alt="" class="i149 ">
-        <img src="/anim/main_00150-min.png" alt="" class="i150 ">
-        <img src="/anim/main_00151-min.png" alt="" class="i151 ">
-        <img src="/anim/main_00152-min.png" alt="" class="i152 ">
-        <img src="/anim/main_00153-min.png" alt="" class="i153 ">
-        <img src="/anim/main_00154-min.png" alt="" class="i154 ">
-        <img src="/anim/main_00155-min.png" alt="" class="i155 ">
-        <img src="/anim/main_00156-min.png" alt="" class="i156 ">
-        <img src="/anim/main_00157-min.png" alt="" class="i157 ">
-        <img src="/anim/main_00158-min.png" alt="" class="i158 ">
-        <img src="/anim/main_00159-min.png" alt="" class="i159 ">
-        <img src="/anim/main_00160-min.png" alt="" class="i160 ">
-        <img src="/anim/main_00161-min.png" alt="" class="i161 ">
-        <img src="/anim/main_00162-min.png" alt="" class="i162 ">
-        <img src="/anim/main_00163-min.png" alt="" class="i163 ">
-        <img src="/anim/main_00164-min.png" alt="" class="i164 ">
-        <img src="/anim/main_00165-min.png" alt="" class="i165 ">
-        <img src="/anim/main_00166-min.png" alt="" class="i166 ">
-        <img src="/anim/main_00167-min.png" alt="" class="i167 ">
-        <img src="/anim/main_00168-min.png" alt="" class="i168 ">
-        <img src="/anim/main_00169-min.png" alt="" class="i169 ">
-        <img src="/anim/main_00170-min.png" alt="" class="i170 ">
-        <img src="/anim/main_00171-min.png" alt="" class="i171 ">
-        <img src="/anim/main_00172-min.png" alt="" class="i172 ">
-        <img src="/anim/main_00173-min.png" alt="" class="i173 ">
-        <img src="/anim/main_00174-min.png" alt="" class="i174 ">
-        <img src="/anim/main_00175-min.png" alt="" class="i175 ">
-        <img src="/anim/main_00176-min.png" alt="" class="i176 ">
-        <img src="/anim/main_00177-min.png" alt="" class="i177 ">
-        <img src="/anim/main_00178-min.png" alt="" class="i178 ">
-        <img src="/anim/main_00179-min.png" alt="" class="i179 ">
-        <img src="/anim/main_00180-min.png" alt="" class="i180 ">
-        <img src="/anim/main_00181-min.png" alt="" class="i181 ">
-        <img src="/anim/main_00182-min.png" alt="" class="i182 ">
-        <img src="/anim/main_00183-min.png" alt="" class="i183 ">
-        <img src="/anim/main_00184-min.png" alt="" class="i184 ">
-        <img src="/anim/main_00185-min.png" alt="" class="i185 ">
-        <img src="/anim/main_00186-min.png" alt="" class="i186 ">
-        <img src="/anim/main_00187-min.png" alt="" class="i187 ">
-        <img src="/anim/main_00188-min.png" alt="" class="i188 ">
-        <img src="/anim/main_00189-min.png" alt="" class="i189 ">
-        <img src="/anim/main_00190-min.png" alt="" class="i190 ">
-        <img src="/anim/main_00191-min.png" alt="" class="i191 ">
-        <img src="/anim/main_00192-min.png" alt="" class="i192 ">
-        <img src="/anim/main_00193-min.png" alt="" class="i193 ">
-        <img src="/anim/main_00194-min.png" alt="" class="i194 ">
-        <img src="/anim/main_00195-min.png" alt="" class="i195 ">
-        <img src="/anim/main_00196-min.png" alt="" class="i196 ">
-        <img src="/anim/main_00197-min.png" alt="" class="i197 ">
-        <img src="/anim/main_00198-min.png" alt="" class="i198 ">
-        <img src="/anim/main_00199-min.png" alt="" class="i199 ">
-        <img src="/anim/main_00200-min.png" alt="" class="i200 ">
-        <img src="/anim/main_00201-min.png" alt="" class="i201 ">
-        <img src="/anim/main_00202-min.png" alt="" class="i202 ">
-        <img src="/anim/main_00203-min.png" alt="" class="i203 ">
-        <img src="/anim/main_00204-min.png" alt="" class="i204 ">
-        <img src="/anim/main_00205-min.png" alt="" class="i205 ">
-        <img src="/anim/main_00206-min.png" alt="" class="i206 ">
-        <img src="/anim/main_00207-min.png" alt="" class="i207 ">
-        <img src="/anim/main_00208-min.png" alt="" class="i208 ">
-        <img src="/anim/main_00209-min.png" alt="" class="i209 ">
-        <img src="/anim/main_00210-min.png" alt="" class="i210 ">
-        <img src="/anim/main_00211-min.png" alt="" class="i211 ">
-        <img src="/anim/main_00212-min.png" alt="" class="i212 ">
-        <img src="/anim/main_00213-min.png" alt="" class="i213 ">
-        <img src="/anim/main_00214-min.png" alt="" class="i214 ">
-        <img src="/anim/main_00215-min.png" alt="" class="i215 ">
-        <img src="/anim/main_00216-min.png" alt="" class="i216 ">
-        <img src="/anim/main_00217-min.png" alt="" class="i217 ">
-        <img src="/anim/main_00218-min.png" alt="" class="i218 ">
-        <img src="/anim/main_00219-min.png" alt="" class="i219 ">
-        <img src="/anim/main_00220-min.png" alt="" class="i220 ">
-        <img src="/anim/main_00221-min.png" alt="" class="i221 ">
-        <img src="/anim/main_00222-min.png" alt="" class="i222 ">
-        <img src="/anim/main_00223-min.png" alt="" class="i223 ">
-        <img src="/anim/main_00224-min.png" alt="" class="i224 ">
-        <img src="/anim/main_00225-min.png" alt="" class="i225 ">
-        <img src="/anim/main_00226-min.png" alt="" class="i226 ">
-        <img src="/anim/main_00227-min.png" alt="" class="i227 ">
-        <img src="/anim/main_00228-min.png" alt="" class="i228 ">
-        <img src="/anim/main_00229-min.png" alt="" class="i229 ">
-        <img src="/anim/main_00230-min.png" alt="" class="i230 ">
-        <img src="/anim/main_00231-min.png" alt="" class="i231 ">
-        <img src="/anim/main_00232-min.png" alt="" class="i232 ">
-        <img src="/anim/main_00233-min.png" alt="" class="i233 ">
-        <img src="/anim/main_00234-min.png" alt="" class="i234 ">
-        <img src="/anim/main_00235-min.png" alt="" class="i235 ">
-        <img src="/anim/main_00236-min.png" alt="" class="i236 ">
-        <img src="/anim/main_00237-min.png" alt="" class="i237 ">
-        <img src="/anim/main_00238-min.png" alt="" class="i238 ">
-        <img src="/anim/main_00239-min.png" alt="" class="i239 ">
-        <img src="/anim/main_00240-min.png" alt="" class="i240 ">
-        <img src="/anim/main_00241-min.png" alt="" class="i241 ">
-        <img src="/anim/main_00242-min.png" alt="" class="i242 ">
-        <img src="/anim/main_00243-min.png" alt="" class="i243 ">
-        <img src="/anim/main_00244-min.png" alt="" class="i244 ">
-        <img src="/anim/main_00245-min.png" alt="" class="i245 ">
-        <img src="/anim/main_00246-min.png" alt="" class="i246 ">
-        <img src="/anim/main_00247-min.png" alt="" class="i247 ">
-        <img src="/anim/main_00248-min.png" alt="" class="i248 ">
-        <img src="/anim/main_00249-min.png" alt="" class="i249 ">
-        <img src="/anim/main_00250-min.png" alt="" class="i250 ">
-        <img src="/anim/main_00251-min.png" alt="" class="i251 ">
-        <img src="/anim/main_00252-min.png" alt="" class="i252 ">
-        <img src="/anim/main_00253-min.png" alt="" class="i253 ">
-        <img src="/anim/main_00254-min.png" alt="" class="i254 ">
-        <img src="/anim/main_00255-min.png" alt="" class="i255 ">
-        <img src="/anim/main_00256-min.png" alt="" class="i256 ">
-        <img src="/anim/main_00257-min.png" alt="" class="i257 ">
-        <img src="/anim/main_00258-min.png" alt="" class="i258 ">
-        <img src="/anim/main_00259-min.png" alt="" class="i259 ">
-        <img src="/anim/main_00260-min.png" alt="" class="i260 ">
-        <img src="/anim/main_00261-min.png" alt="" class="i261 ">
-        <img src="/anim/main_00262-min.png" alt="" class="i262 ">
-        <img src="/anim/main_00263-min.png" alt="" class="i263 ">
-        <img src="/anim/main_00264-min.png" alt="" class="i264 ">
-        <img src="/anim/main_00265-min.png" alt="" class="i265 ">
-        <img src="/anim/main_00266-min.png" alt="" class="i266 ">
-        <img src="/anim/main_00267-min.png" alt="" class="i267 ">
-        <img src="/anim/main_00268-min.png" alt="" class="i268 ">
-        <img src="/anim/main_00269-min.png" alt="" class="i269 ">
-        <img src="/anim/main_00270-min.png" alt="" class="i270 ">
-        <img src="/anim/main_00271-min.png" alt="" class="i271 ">
-        <img src="/anim/main_00272-min.png" alt="" class="i272 ">
-        <img src="/anim/main_00273-min.png" alt="" class="i273 ">
-        <img src="/anim/main_00274-min.png" alt="" class="i274 ">
-        <img src="/anim/main_00275-min.png" alt="" class="i275 ">
-        <img src="/anim/main_00276-min.png" alt="" class="i276 ">
-        <img src="/anim/main_00277-min.png" alt="" class="i277 ">
-        <img src="/anim/main_00278-min.png" alt="" class="i278 ">
-        <img src="/anim/main_00279-min.png" alt="" class="i279 ">
-        <img src="/anim/main_00280-min.png" alt="" class="i280 ">
-        <img src="/anim/main_00281-min.png" alt="" class="i281 ">
-        <img src="/anim/main_00282-min.png" alt="" class="i282 ">
-        <img src="/anim/main_00283-min.png" alt="" class="i283 ">
-        <img src="/anim/main_00284-min.png" alt="" class="i284 ">
-        <img src="/anim/main_00285-min.png" alt="" class="i285 ">
-        <img src="/anim/main_00286-min.png" alt="" class="i286 ">
-        <img src="/anim/main_00287-min.png" alt="" class="i287 ">
-        <img src="/anim/main_00288-min.png" alt="" class="i288 ">
-        <img src="/anim/main_00289-min.png" alt="" class="i289 ">
-        <img src="/anim/main_00290-min.png" alt="" class="i290 ">
-        <img src="/anim/main_00291-min.png" alt="" class="i291 ">
-        <img src="/anim/main_00292-min.png" alt="" class="i292 ">
-        <img src="/anim/main_00293-min.png" alt="" class="i293 ">
-        <img src="/anim/main_00294-min.png" alt="" class="i294 ">
-        <img src="/anim/main_00295-min.png" alt="" class="i295 ">
-        <img src="/anim/main_00296-min.png" alt="" class="i296 ">
-        <img src="/anim/main_00297-min.png" alt="" class="i297 ">
-        <img src="/anim/main_00298-min.png" alt="" class="i298 ">
-        <img src="/anim/main_00299-min.png" alt="" class="i299 ">
-        <img src="/anim/main_00300-min.png" alt="" class="i300 ">
-        <img src="/anim/main_00301-min.png" alt="" class="i301 ">
-        <img src="/anim/main_00302-min.png" alt="" class="i302 ">
-        <img src="/anim/main_00303-min.png" alt="" class="i303 ">
-        <img src="/anim/main_00304-min.png" alt="" class="i304 ">
-        <img src="/anim/main_00305-min.png" alt="" class="i305 ">
-        <img src="/anim/main_00306-min.png" alt="" class="i306 ">
-        <img src="/anim/main_00307-min.png" alt="" class="i307 ">
-        <img src="/anim/main_00308-min.png" alt="" class="i308 ">
-        <img src="/anim/main_00309-min.png" alt="" class="i309 ">
-        <img src="/anim/main_00310-min.png" alt="" class="i310 ">
-        <img src="/anim/main_00311-min.png" alt="" class="i311 ">
-        <img src="/anim/main_00312-min.png" alt="" class="i312 ">
-        <img src="/anim/main_00313-min.png" alt="" class="i313 ">
-        <img src="/anim/main_00314-min.png" alt="" class="i314 ">
-        <img src="/anim/main_00315-min.png" alt="" class="i315 ">
-        <img src="/anim/main_00316-min.png" alt="" class="i316 ">
-        <img src="/anim/main_00317-min.png" alt="" class="i317 ">
-        <img src="/anim/main_00318-min.png" alt="" class="i318 ">
-        <img src="/anim/main_00319-min.png" alt="" class="i319 ">
-        <img src="/anim/main_00320-min.png" alt="" class="i320 ">
-        <img src="/anim/main_00321-min.png" alt="" class="i321 ">
-        <img src="/anim/main_00322-min.png" alt="" class="i322 ">
-        <img src="/anim/main_00323-min.png" alt="" class="i323 ">
-        <img src="/anim/main_00324-min.png" alt="" class="i324 ">
-        <img src="/anim/main_00325-min.png" alt="" class="i325 ">
-        <img src="/anim/main_00326-min.png" alt="" class="i326 ">
-        <img src="/anim/main_00327-min.png" alt="" class="i327 ">
-        <img src="/anim/main_00328-min.png" alt="" class="i328 ">
-        <img src="/anim/main_00329-min.png" alt="" class="i329 ">
-        <img src="/anim/main_00330-min.png" alt="" class="i330 ">
-        <img src="/anim/main_00331-min.png" alt="" class="i331 ">
-        <img src="/anim/main_00332-min.png" alt="" class="i332 ">
-        <img src="/anim/main_00333-min.png" alt="" class="i333 ">
-        <img src="/anim/main_00334-min.png" alt="" class="i334 ">
-        <img src="/anim/main_00335-min.png" alt="" class="i335 ">
-        <img src="/anim/main_00336-min.png" alt="" class="i336 ">
-        <img src="/anim/main_00337-min.png" alt="" class="i337 ">
-        <img src="/anim/main_00338-min.png" alt="" class="i338 ">
-        <img src="/anim/main_00339-min.png" alt="" class="i339 ">
-        <img src="/anim/main_00340-min.png" alt="" class="i340 ">
-        <img src="/anim/main_00341-min.png" alt="" class="i341 ">
-        <img src="/anim/main_00342-min.png" alt="" class="i342 ">
-        <img src="/anim/main_00343-min.png" alt="" class="i343 ">
-        <img src="/anim/main_00344-min.png" alt="" class="i344 ">
-        <img src="/anim/main_00345-min.png" alt="" class="i345 ">
-        <img src="/anim/main_00346-min.png" alt="" class="i346 ">
-        <img src="/anim/main_00347-min.png" alt="" class="i347 ">
-        <img src="/anim/main_00348-min.png" alt="" class="i348 ">
-        <img src="/anim/main_00349-min.png" alt="" class="i349 ">
-        <img src="/anim/main_00350-min.png" alt="" class="i350 ">
-        <img src="/anim/main_00351-min.png" alt="" class="i351 ">
-        <img src="/anim/main_00352-min.png" alt="" class="i352 ">
-        <img src="/anim/main_00353-min.png" alt="" class="i353 ">
-        <img src="/anim/main_00354-min.png" alt="" class="i354 ">
-        <img src="/anim/main_00355-min.png" alt="" class="i355 ">
-        <img src="/anim/main_00356-min.png" alt="" class="i356 ">
-        <img src="/anim/main_00357-min.png" alt="" class="i357 ">
-        <img src="/anim/main_00358-min.png" alt="" class="i358 ">
-        <img src="/anim/main_00359-min.png" alt="" class="i359 ">
-        <img src="/anim/main_00360-min.png" alt="" class="i360 ">
-        <img src="/anim/main_00361-min.png" alt="" class="i361 ">
-        <img src="/anim/main_00362-min.png" alt="" class="i362 ">
-        <img src="/anim/main_00363-min.png" alt="" class="i363 ">
-        <img src="/anim/main_00364-min.png" alt="" class="i364 ">
-        <img src="/anim/main_00365-min.png" alt="" class="i365 ">
-        <img src="/anim/main_00366-min.png" alt="" class="i366 ">
-        <img src="/anim/main_00367-min.png" alt="" class="i367 ">
-        <img src="/anim/main_00368-min.png" alt="" class="i368 ">
-        <img src="/anim/main_00369-min.png" alt="" class="i369 ">
-        <img src="/anim/main_00370-min.png" alt="" class="i370 ">
-        <img src="/anim/main_00371-min.png" alt="" class="i371 ">
-        <img src="/anim/main_00372-min.png" alt="" class="i372 ">
-        <img src="/anim/main_00373-min.png" alt="" class="i373 ">
-        <img src="/anim/main_00374-min.png" alt="" class="i374 ">
-        <img src="/anim/main_00375-min.png" alt="" class="i375 ">
-        <img src="/anim/main_00376-min.png" alt="" class="i376 ">
-        <img src="/anim/main_00377-min.png" alt="" class="i377 ">
-        <img src="/anim/main_00378-min.png" alt="" class="i378 ">
-        <img src="/anim/main_00379-min.png" alt="" class="i379 ">
-        <img src="/anim/main_00380-min.png" alt="" class="i380 ">
-        <img src="/anim/main_00381-min.png" alt="" class="i381 ">
-        <img src="/anim/main_00382-min.png" alt="" class="i382 ">
-        <img src="/anim/main_00383-min.png" alt="" class="i383 ">
-        <img src="/anim/main_00384-min.png" alt="" class="i384 ">
-        <img src="/anim/main_00385-min.png" alt="" class="i385 ">
-        <img src="/anim/main_00386-min.png" alt="" class="i386 ">
-        <img src="/anim/main_00387-min.png" alt="" class="i387 ">
-        <img src="/anim/main_00388-min.png" alt="" class="i388 ">
-        <img src="/anim/main_00389-min.png" alt="" class="i389 ">
-        <img src="/anim/main_00390-min.png" alt="" class="i390 ">
-        <img src="/anim/main_00391-min.png" alt="" class="i391 ">
-        <img src="/anim/main_00392-min.png" alt="" class="i392 ">
-        <img src="/anim/main_00393-min.png" alt="" class="i393 ">
-        <img src="/anim/main_00394-min.png" alt="" class="i394 ">
-        <img src="/anim/main_00395-min.png" alt="" class="i395 ">
-        <img src="/anim/main_00396-min.png" alt="" class="i396 ">
-        <img src="/anim/main_00397-min.png" alt="" class="i397 ">
-        <img src="/anim/main_00398-min.png" alt="" class="i398 ">
-        <img src="/anim/main_00399-min.png" alt="" class="i399 ">
-        <img src="/anim/main_00400-min.png" alt="" class="i400 ">
-        <img src="/anim/main_00401-min.png" alt="" class="i401 ">
-        <img src="/anim/main_00402-min.png" alt="" class="i402 ">
-        <img src="/anim/main_00403-min.png" alt="" class="i403 ">
-        <img src="/anim/main_00404-min.png" alt="" class="i404 ">
-        <img src="/anim/main_00405-min.png" alt="" class="i405 ">
-        <img src="/anim/main_00406-min.png" alt="" class="i406 ">
-        <img src="/anim/main_00407-min.png" alt="" class="i407 ">
-        <img src="/anim/main_00408-min.png" alt="" class="i408 ">
-        <img src="/anim/main_00409-min.png" alt="" class="i409 ">
-        <img src="/anim/main_00410-min.png" alt="" class="i410 ">
-        <img src="/anim/main_00411-min.png" alt="" class="i411 ">
-        <img src="/anim/main_00412-min.png" alt="" class="i412 ">
-        <img src="/anim/main_00413-min.png" alt="" class="i413 ">
-        <img src="/anim/main_00414-min.png" alt="" class="i414 ">
-        <img src="/anim/main_00415-min.png" alt="" class="i415 ">
-        <img src="/anim/main_00416-min.png" alt="" class="i416 ">
-        <img src="/anim/main_00417-min.png" alt="" class="i417 ">
-        <img src="/anim/main_00418-min.png" alt="" class="i418 ">
-        <img src="/anim/main_00419-min.png" alt="" class="i419 ">
-        <img src="/anim/main_00420-min.png" alt="" class="i420 ">
-        <img src="/anim/main_00421-min.png" alt="" class="i421 ">
-        <img src="/anim/main_00422-min.png" alt="" class="i422 ">
-        <img src="/anim/main_00423-min.png" alt="" class="i423 ">
-        <img src="/anim/main_00424-min.png" alt="" class="i424 ">
-        <img src="/anim/main_00425-min.png" alt="" class="i425 ">
-        <img src="/anim/main_00426-min.png" alt="" class="i426 ">
-        <img src="/anim/main_00427-min.png" alt="" class="i427 ">
-        <img src="/anim/main_00428-min.png" alt="" class="i428 ">
-        <img src="/anim/main_00429-min.png" alt="" class="i429 ">
-        <img src="/anim/main_00430-min.png" alt="" class="i430 ">
-        <img src="/anim/main_00431-min.png" alt="" class="i431 ">
-        <img src="/anim/main_00432-min.png" alt="" class="i432 ">
-        <img src="/anim/main_00433-min.png" alt="" class="i433 ">
-        <img src="/anim/main_00434-min.png" alt="" class="i434 ">
-        <img src="/anim/main_00435-min.png" alt="" class="i435 ">
-        <img src="/anim/main_00436-min.png" alt="" class="i436 ">
-        <img src="/anim/main_00437-min.png" alt="" class="i437 ">
-        <img src="/anim/main_00438-min.png" alt="" class="i438 ">
-        <img src="/anim/main_00439-min.png" alt="" class="i439 ">
-        <img src="/anim/main_00440-min.png" alt="" class="i440 ">
-        <img src="/anim/main_00441-min.png" alt="" class="i441 ">
-        <img src="/anim/main_00442-min.png" alt="" class="i442 ">
-        <img src="/anim/main_00443-min.png" alt="" class="i443 ">
-        <img src="/anim/main_00444-min.png" alt="" class="i444 ">
-        <img src="/anim/main_00445-min.png" alt="" class="i445 ">
-        <img src="/anim/main_00446-min.png" alt="" class="i446 ">
-        <img src="/anim/main_00447-min.png" alt="" class="i447 ">
-        <img src="/anim/main_00448-min.png" alt="" class="i448 ">
-        <img src="/anim/main_00449-min.png" alt="" class="i449 ">
-        <img src="/anim/main_00450-min.png" alt="" class="i450 ">
-        <img src="/anim/main_00451-min.png" alt="" class="i451 ">
-        <img src="/anim/main_00452-min.png" alt="" class="i452 ">
-        <img src="/anim/main_00453-min.png" alt="" class="i453 ">
-        <img src="/anim/main_00454-min.png" alt="" class="i454 ">
-        <img src="/anim/main_00455-min.png" alt="" class="i455 ">
-        <img src="/anim/main_00456-min.png" alt="" class="i456 ">
-        <img src="/anim/main_00457-min.png" alt="" class="i457 ">
-        <img src="/anim/main_00458-min.png" alt="" class="i458 ">
-        <img src="/anim/main_00459-min.png" alt="" class="i459 ">
-        <img src="/anim/main_00460-min.png" alt="" class="i460 ">
-        <img src="/anim/main_00461-min.png" alt="" class="i461 ">
-        <img src="/anim/main_00462-min.png" alt="" class="i462 ">
-        <img src="/anim/main_00463-min.png" alt="" class="i463 ">
-        <img src="/anim/main_00464-min.png" alt="" class="i464 ">
-        <img src="/anim/main_00465-min.png" alt="" class="i465 ">
-        <img src="/anim/main_00466-min.png" alt="" class="i466 ">
-        <img src="/anim/main_00467-min.png" alt="" class="i467 ">
-        <img src="/anim/main_00468-min.png" alt="" class="i468 ">
-        <img src="/anim/main_00469-min.png" alt="" class="i469 ">
-        <img src="/anim/main_00470-min.png" alt="" class="i470 ">
-        <img src="/anim/main_00471-min.png" alt="" class="i471 ">
-        <img src="/anim/main_00472-min.png" alt="" class="i472 ">
-        <img src="/anim/main_00473-min.png" alt="" class="i473 ">
-        <img src="/anim/main_00474-min.png" alt="" class="i474 ">
-        <img src="/anim/main_00475-min.png" alt="" class="i475 ">
-        <img src="/anim/main_00476-min.png" alt="" class="i476 ">
-        <img src="/anim/main_00477-min.png" alt="" class="i477 ">
-        <img src="/anim/main_00478-min.png" alt="" class="i478 ">
-        <img src="/anim/main_00479-min.png" alt="" class="i479 ">
-        <img src="/anim/main_00480-min.png" alt="" class="i480 ">
-        <img src="/anim/main_00481-min.png" alt="" class="i481 ">
-        <img src="/anim/main_00482-min.png" alt="" class="i482 ">
-        <img src="/anim/main_00483-min.png" alt="" class="i483 ">
-        <img src="/anim/main_00484-min.png" alt="" class="i484 ">
-        <img src="/anim/main_00485-min.png" alt="" class="i485 ">
-        <img src="/anim/main_00486-min.png" alt="" class="i486 ">
-        <img src="/anim/main_00487-min.png" alt="" class="i487 ">
-        <img src="/anim/main_00488-min.png" alt="" class="i488 ">
-        <img src="/anim/main_00489-min.png" alt="" class="i489 ">
-        <img src="/anim/main_00490-min.png" alt="" class="i490 ">
-        <img src="/anim/main_00491-min.png" alt="" class="i491 ">
-        <img src="/anim/main_00492-min.png" alt="" class="i492 ">
-        <img src="/anim/main_00493-min.png" alt="" class="i493 ">
-        <img src="/anim/main_00494-min.png" alt="" class="i494 ">
-        <img src="/anim/main_00495-min.png" alt="" class="i495 ">
-        <img src="/anim/main_00496-min.png" alt="" class="i496 ">
-        <img src="/anim/main_00497-min.png" alt="" class="i497 ">
-        <img src="/anim/main_00498-min.png" alt="" class="i498 ">
-        <img src="/anim/main_00499-min.png" alt="" class="i499 ">
-        <img src="/anim/main_00500-min.png" alt="" class="i500 ">
-        <img src="/anim/main_00501-min.png" alt="" class="i501 ">
-        <img src="/anim/main_00502-min.png" alt="" class="i502 ">
-        <img src="/anim/main_00503-min.png" alt="" class="i503 ">
-        <img src="/anim/main_00504-min.png" alt="" class="i504 ">
-        <img src="/anim/main_00505-min.png" alt="" class="i505 ">
-        <img src="/anim/main_00506-min.png" alt="" class="i506 ">
-        <img src="/anim/main_00507-min.png" alt="" class="i507 ">
-        <img src="/anim/main_00508-min.png" alt="" class="i508 ">
-        <img src="/anim/main_00509-min.png" alt="" class="i509 ">
-        <img src="/anim/main_00510-min.png" alt="" class="i510 ">
-        <img src="/anim/main_00511-min.png" alt="" class="i511 ">
-        <img src="/anim/main_00512-min.png" alt="" class="i512 ">
-        <img src="/anim/main_00513-min.png" alt="" class="i513 ">
-        <img src="/anim/main_00514-min.png" alt="" class="i514 ">
-        <img src="/anim/main_00515-min.png" alt="" class="i515 ">
-        <img src="/anim/main_00516-min.png" alt="" class="i516 ">
-        <img src="/anim/main_00517-min.png" alt="" class="i517 ">
-        <img src="/anim/main_00518-min.png" alt="" class="i518 ">
-        <img src="/anim/main_00519-min.png" alt="" class="i519 ">
-        <img src="/anim/main_00520-min.png" alt="" class="i520 ">
-        <img src="/anim/main_00521-min.png" alt="" class="i521 ">
-        <img src="/anim/main_00522-min.png" alt="" class="i522 ">
-        <img src="/anim/main_00523-min.png" alt="" class="i523 ">
-        <img src="/anim/main_00524-min.png" alt="" class="i524 ">
-        <img src="/anim/main_00525-min.png" alt="" class="i525 ">
-        <img src="/anim/main_00526-min.png" alt="" class="i526 ">
-        <img src="/anim/main_00527-min.png" alt="" class="i527 ">
-        <img src="/anim/main_00528-min.png" alt="" class="i528 ">
-        <img src="/anim/main_00529-min.png" alt="" class="i529 ">
-        <img src="/anim/main_00530-min.png" alt="" class="i530 ">
-        <img src="/anim/main_00531-min.png" alt="" class="i531 ">
-        <img src="/anim/main_00532-min.png" alt="" class="i532 ">
-        <img src="/anim/main_00533-min.png" alt="" class="i533 ">
-        <img src="/anim/main_00534-min.png" alt="" class="i534 ">
-        <img src="/anim/main_00535-min.png" alt="" class="i535 ">
-        <img src="/anim/main_00536-min.png" alt="" class="i536 ">
-        <img src="/anim/main_00537-min.png" alt="" class="i537 ">
-        <img src="/anim/main_00538-min.png" alt="" class="i538 ">
-        <img src="/anim/main_00539-min.png" alt="" class="i539 ">
-        <img src="/anim/main_00540-min.png" alt="" class="i540 ">
-        <img src="/anim/main_00541-min.png" alt="" class="i541 ">
-        <img src="/anim/main_00542-min.png" alt="" class="i542 ">
-        <img src="/anim/main_00543-min.png" alt="" class="i543 ">
-        <img src="/anim/main_00544-min.png" alt="" class="i544 ">
-        <img src="/anim/main_00545-min.png" alt="" class="i545 ">
-        <img src="/anim/main_00546-min.png" alt="" class="i546 ">
-        <img src="/anim/main_00547-min.png" alt="" class="i547 ">
-        <img src="/anim/main_00548-min.png" alt="" class="i548 ">
-        <img src="/anim/main_00549-min.png" alt="" class="i549 ">
-        <img src="/anim/main_00550-min.png" alt="" class="i550 ">
-        <img src="/anim/main_00551-min.png" alt="" class="i551 ">
-        <img src="/anim/main_00552-min.png" alt="" class="i552 ">
-        <img src="/anim/main_00553-min.png" alt="" class="i553 ">
-        <img src="/anim/main_00554-min.png" alt="" class="i554 ">
-        <img src="/anim/main_00555-min.png" alt="" class="i555 ">
-        <img src="/anim/main_00556-min.png" alt="" class="i556 ">
-        <img src="/anim/main_00557-min.png" alt="" class="i557 ">
-        <img src="/anim/main_00558-min.png" alt="" class="i558 ">
-        <img src="/anim/main_00559-min.png" alt="" class="i559 ">
-        <img src="/anim/main_00560-min.png" alt="" class="i560 ">
-        <img src="/anim/main_00561-min.png" alt="" class="i561 ">
-        <img src="/anim/main_00562-min.png" alt="" class="i562 ">
-        <img src="/anim/main_00563-min.png" alt="" class="i563 ">
-        <img src="/anim/main_00564-min.png" alt="" class="i564 ">
-        <img src="/anim/main_00565-min.png" alt="" class="i565 ">
-        <img src="/anim/main_00566-min.png" alt="" class="i566 ">
-        <img src="/anim/main_00567-min.png" alt="" class="i567 ">
-        <img src="/anim/main_00568-min.png" alt="" class="i568 ">
-        <img src="/anim/main_00569-min.png" alt="" class="i569 ">
-        <img src="/anim/main_00570-min.png" alt="" class="i570 ">
-        <img src="/anim/main_00571-min.png" alt="" class="i571 ">
-        <img src="/anim/main_00572-min.png" alt="" class="i572 ">
-        <img src="/anim/main_00573-min.png" alt="" class="i573 ">
-        <img src="/anim/main_00574-min.png" alt="" class="i574 ">
-        <img src="/anim/main_00575-min.png" alt="" class="i575 ">
+        <div id="dna"></div>
+        <img src="/images/leaf.png" class="leaf" />
+        <img src="/images/powder.png" class="powder" />
+        <div id="cells"></div>
+        <img src="/images/capsule-top.png" class="capsule-top" />
+        <img src="/images/capsule-bottom.png" class="capsule-bottom" />
+        <img src="/images/cap.png" class="cap" />
+        <img src="/images/bottle.png" class="bottle" />
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            const backgroundColor = 0x000000;
+            var object;
+            var i = {
+                x: 0,
+                y: 3.5,
+                z: -4
+            };
+
+            var obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10;
+            var obj_scale = {
+                x: 1,
+                y: 1,
+                z: 1
+            }
+            var obj1_r = {
+                x: 0.5,
+                y: 0,
+                z: 0
+            }
+            var obj2_r = {
+                x: -0.5,
+                y: 0,
+                z: 0
+            }
+            var obj3_r = {
+                x: -0.6,
+                y: 0,
+                z: -0.7
+            }
+            var obj4_r = {
+                x: 0,
+                y: 0,
+                z: -0.7
+            }
+            var obj5_r = {
+                x: -0.7,
+                y: 0,
+                z: -0.3
+            }
+            var obj6_r = {
+                x: -0.7,
+                y: 0,
+                z: 0.7
+            }
+            var obj7_r = {
+                x: 0,
+                y: 0,
+                z: 0.3
+            }
+            var obj8_r = {
+                x: 0.7,
+                y: 0,
+                z: -0.7
+            }
+            var obj9_r = {
+                x: 0.7,
+                y: 0,
+                z: -0.7
+            }
+            var obj10_r = {
+                x: 0.7,
+                y: 0,
+                z: -0.2
+            }
+
+            var obj1_l = {
+                x: 2,
+                y: 0,
+                z: 0
+            }
+            var obj2_l = {
+                x: 2.6,
+                y: 0,
+                z: -1
+            }
+            var obj3_l = {
+                x: 2.3,
+                y: 0.3,
+                z: -0.2
+            }
+            var obj4_l = {
+                x: 1.8,
+                y: 0.3,
+                z: -0.5
+            }
+            var obj5_l = {
+                x: 1.8,
+                y: 0,
+                z: -0.6
+            }
+            var obj6_l = {
+                x: 2,
+                y: 0.5,
+                z: -0.8
+            }
+            var obj7_l = {
+                x: 2.2,
+                y: -0.3,
+                z: -0.8
+            }
+            var obj8_l = {
+                x: 1.9,
+                y: -0.3,
+                z: -0.8
+            }
+            var obj9_l = {
+                x: 1.5,
+                y: -0.1,
+                z: -0.1
+            }
+            var obj10_l = {
+                x: 1.5,
+                y: 0.3,
+                z: -0.5
+            }
+
+            var scene = new THREE.Scene();
+            var scene2 = new THREE.Scene();
+
+            var camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 800);
+            camera.position.set(0, 0, 2.1);
+
+            var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setClearColor(backgroundColor, 0);//0x );
+
+            renderer.toneMapping = THREE.LinearToneMapping;
+            renderer.toneMappingExposure = Math.pow(0.94, 5.0);
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFShadowMap;
+
+            var renderer2 = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer2.setPixelRatio(window.devicePixelRatio);
+            renderer2.setSize(window.innerWidth, window.innerHeight);
+            renderer2.setClearColor(backgroundColor, 0);//0x );
+
+            renderer2.toneMapping = THREE.LinearToneMapping;
+            renderer2.toneMappingExposure = Math.pow(0.94, 5.0);
+            renderer2.shadowMap.enabled = true;
+            renderer2.shadowMap.type = THREE.PCFShadowMap;
+
+            window.addEventListener('resize', function () {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer2.setSize(window.innerWidth, window.innerHeight);
+            }, false);
+
+            document.getElementById('dna').appendChild(renderer.domElement);
+            document.getElementById('cells').appendChild(renderer2.domElement);
+
+            function renderScene() {
+                renderer.render(scene, camera);
+                renderer2.render(scene2, camera);
+            }
+            //renderCalls.push(renderScene);
+
+            var light = new THREE.PointLight(0xffffcc, 20, 200);
+            light.position.set(4, 30, -20);
+            scene.add(light);
+            scene2.add(light);
+
+            var light2 = new THREE.AmbientLight(0x20202A, 20, 100);
+            light2.position.set(30, -10, 30);
+            scene.add(light2);
+
+            var light3 = new THREE.AmbientLight(0x20202A, 20, 100);
+            light2.position.set(30, -10, 30);
+            scene2.add(light3)
+
+            /* ////////////////////////////////////////////////////////////////////////// */
+
+            var gridHelper = new THREE.GridHelper(200, 50)
+            //     scene.add(gridHelper)
+
+            var loader = new THREE.GLTFLoader();
+            loader.crossOrigin = true;
+            loader.load('/GLTf/GLTf/DNA Strand/Dna Strand.gltf', function (data) {
+                object = data.scene;
+                object.position.set(1.6, 0, 0);
+                object.scale.set(1.2,1.2,1.2)
+                scene.add(object);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj1 = data.scene;
+                obj1.position.set(obj1_l.x, obj1_l.y, obj1_l.z);
+                obj1.rotation.set(0.5, 0, 0)
+                scene2.add(obj1);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj2 = data.scene;
+                obj2.position.set(obj2_l.x, obj2_l.y, obj2_l.z);
+                obj2.rotation.set(-0.5, 0, 0)
+                scene2.add(obj2);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj3 = data.scene;
+                obj3.position.set(obj3_l.x, obj3_l.y, obj3_l.z);
+                obj3.rotation.set(-0.6, 0, -0.7)
+                scene2.add(obj3);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj4 = data.scene;
+                obj4.position.set(obj4_l.x, obj4_l.y, obj4_l.z);
+                obj4.rotation.set(0, 0, -0.7)
+                scene2.add(obj4);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj5 = data.scene;
+                obj5.position.set(obj5_l.x, obj5_l.y, obj5_l.z);
+                obj5.rotation.set(-0.7, 0, -0.3)
+                scene2.add(obj5);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj6 = data.scene;
+                obj6.position.set(obj6_l.x, obj6_l.y, obj6_l.z);
+                obj6.rotation.set(-0.7, 0, 0.7)
+                scene2.add(obj6);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj7 = data.scene;
+                obj7.position.set(obj7_l.x, obj7_l.y, obj7_l.z);
+                obj7.rotation.set(-0, 0, 0.3)
+                scene2.add(obj7);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj8 = data.scene;
+                obj8.position.set(obj8_l.x, obj8_l.y, obj8_l.z);
+                obj8.rotation.set(0.7, 0, -0.7)
+                scene2.add(obj8);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj9 = data.scene;
+                obj9.position.set(obj9_l.x, obj9_l.y, obj9_l.z);
+                obj9.rotation.set(0.7, 0, -0.7)
+                scene2.add(obj9);
+            });
+            loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
+                obj10 = data.scene;
+                obj10.position.set(obj10_l.x, obj10_l.y, obj10_l.z);
+                obj10.rotation.set(0.7, 0, -0.2)
+                scene2.add(obj10);
+            });
+
+
+            /*////////////////////////////////////////*/
+
+            function render() {
+                requestAnimationFrame(render);
+
+                renderer.render(scene, camera);
+                renderer2.render(scene2, camera);
+
+                if (object) {
+                    object.rotation.x = i.x
+                    object.rotation.y = i.y
+                    object.rotation.z = i.z
+                }
+                if (obj1) {
+                    obj1.rotation.x = obj1_r.x
+                    obj1.rotation.y = obj1_r.y
+                    obj1.rotation.z = obj1_r.z
+                    obj1.position.set(obj1_l.x, obj1_l.y, obj1_l.z)
+                    obj1.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj2) {
+                    obj2.rotation.x = obj2_r.x
+                    obj2.rotation.y = obj2_r.y
+                    obj2.rotation.z = obj2_r.z
+                    obj2.position.set(obj2_l.x, obj2_l.y, obj2_l.z)
+                    obj2.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj3) {
+                    obj3.rotation.x = obj3_r.x
+                    obj3.rotation.y = obj3_r.y
+                    obj3.rotation.z = obj3_r.z
+                    obj3.position.set(obj3_l.x, obj3_l.y, obj3_l.z)
+                    obj3.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj4) {
+                    obj4.rotation.x = obj4_r.x
+                    obj4.rotation.y = obj4_r.y
+                    obj4.rotation.z = obj4_r.z
+                    obj4.position.set(obj4_l.x, obj4_l.y, obj4_l.z)
+                    obj4.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj5) {
+                    obj5.rotation.x = obj5_r.x
+                    obj5.rotation.y = obj5_r.y
+                    obj5.rotation.z = obj5_r.z
+                    obj5.position.set(obj5_l.x, obj5_l.y, obj5_l.z)
+                    obj5.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj6) {
+                    obj6.rotation.x = obj6_r.x
+                    obj6.rotation.y = obj6_r.y
+                    obj6.rotation.z = obj6_r.z
+                    obj6.position.set(obj6_l.x, obj6_l.y, obj6_l.z)
+                    obj6.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj7) {
+                    obj7.rotation.x = obj7_r.x
+                    obj7.rotation.y = obj7_r.y
+                    obj7.rotation.z = obj7_r.z
+                    obj7.position.set(obj7_l.x, obj7_l.y, obj7_l.z)
+                    obj7.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj8) {
+                    obj8.rotation.x = obj8_r.x
+                    obj8.rotation.y = obj8_r.y
+                    obj8.rotation.z = obj8_r.z
+                    obj8.position.set(obj8_l.x, obj8_l.y, obj8_l.z)
+                    obj8.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj9) {
+                    obj9.rotation.x = obj9_r.x
+                    obj9.rotation.y = obj9_r.y
+                    obj9.rotation.z = obj9_r.z
+                    obj9.position.set(obj9_l.x, obj9_l.y, obj9_l.z)
+                    obj9.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+                if (obj10) {
+                    obj10.rotation.x = obj10_r.x
+                    obj10.rotation.y = obj10_r.y
+                    obj10.rotation.z = obj10_r.z
+                    obj10.position.set(obj10_l.x, obj10_l.y, obj10_l.z)
+                    obj10.scale.set(obj_scale.x, obj_scale.y, obj_scale.z)
+                }
+
+            }
+            render();
+
+            /*////////////////////////////////////////*/
+        </script>
+        <script>
+            function getScrollPercent() {
+                var h = document.documentElement,
+                    b = document.body,
+                    st = 'scrollTop',
+                    sh = 'scrollHeight'
+                return (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100
+            }
+
+            const tl1 = anime.timeline({ autoplay: false })
+            const tl2 = anime.timeline({ autoplay: false })
+            const tl3 = anime.timeline({ autoplay: false })
+            const tl4 = anime.timeline({ autoplay: false })
+            const tl5 = anime.timeline({ autoplay: false })
+            const tl6 = anime.timeline({ autoplay: false })
+            const tl7 = anime.timeline({ autoplay: false })
+            const tl8 = anime.timeline({ autoplay: false })
+            const tl9 = anime.timeline({ autoplay: false })
+            const tl10 = anime.timeline({ autoplay: false })
+            const tl11 = anime.timeline({ autoplay: false })
+            const tl12 = anime.timeline({ autoplay: false })
+            const tl13 = anime.timeline({ autoplay: false })
+
+
+            tl1.add({
+                targets: i,
+                x: 0,
+                y: 3,
+                z: -2.5,
+                easing: 'linear',
+                delay:1000,
+                duration:100
+            }).add({
+                targets: '#dna',
+                opacity: 0,
+                easing: 'linear',
+                duration:100,
+            }).add({
+                targets: '.leaf',
+                opacity: 1,
+                easing: 'linear',
+                duration:100,
+            }).add({
+                targets: '.leaf',
+                opacity: 0,
+                easing: 'linear',
+                duration:100
+            }).add({
+                targets: '.powder',
+                opacity: 1,
+                easing: 'linear',
+                duration:100
+            }).add({
+                targets: '.powder',
+                opacity: 0,
+                easing: 'linear'
+            }).add({
+                targets: '#cells',
+                opacity: 1,
+                easing: 'linear',
+                duration:50,
+            }).add({
+                targets: obj1_r,
+                x: obj1_r.x + 2,
+                y: 1,
+                z: obj1_r.z + 2,
+                easing: 'linear',
+                duration:200
+            }).add({
+                targets: obj1_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+
+            tl2.add({
+                targets: obj2_r,
+                x: obj2_r.x + 1,
+                y: 1,
+                z: obj2_r.z + 1,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj2_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear',
+                duration:100
+            })
+            tl3.add({
+                targets: obj3_r,
+                x: obj3_r.x + 2,
+                y: 1,
+                z: obj3_r.z + 2,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj3_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear',
+            })
+            tl4.add({
+                targets: obj4_r,
+                x: obj4_r.x + 1,
+                y: 1,
+                z: obj4_r.z + 1,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj4_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+            tl5.add({
+                targets: obj5_r,
+                x: obj5_r.x + 2,
+                y: 1,
+                z: obj5_r.z + 2,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj5_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+            tl6.add({
+                targets: obj6_r,
+                x: obj6_r.x + 1,
+                y: 1,
+                z: obj6_r.z + 1,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj6_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+            tl7.add({
+                targets: obj7_r,
+                x: obj7_r.x + 2,
+                y: 1,
+                z: obj7_r.z + 2,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj7_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+            tl8.add({
+                targets: obj8_r,
+                x: obj8_r.x + 1,
+                y: 1,
+                z: obj8_r.z + 1,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj8_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+            tl9.add({
+                targets: obj9_r,
+                x: obj9_r.x + 2,
+                y: 1,
+                z: obj9_r.z + 2,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj9_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+            tl10.add({
+                targets: obj10_r,
+                x: obj10_r.x + 1,
+                y: 1,
+                z: obj10_r.z + 1,
+                easing: 'linear',
+                delay: 2500,
+                duration:200
+            }).add({
+                targets: obj10_l,
+                x: 2,
+                y: 0,
+                z: 0,
+                easing: 'linear'
+            })
+
+            tl11.add({
+                targets: obj_scale,
+                x: 0,
+                y: 0,
+                z: 0,
+                easing: 'linear',
+                delay: 2500,
+            })
+
+
+
+            tl12.add({
+                targets: '.capsule-top',
+                translateY: 440,
+                easing: 'linear',
+                delay: 10000
+            })
+                .add({
+                    targets: '.capsule-top',
+                    translateY: 515,
+                    scale: 0.4,
+                    easing: 'linear'
+                })
+                .add({
+                    targets: '.capsule-top',
+                    translateY: 515,
+                    translateX: -750,
+                    scale: 0.4,
+                    easing: 'linear'
+                })
+                .add({
+                    targets: '.cap',
+                    translateY: 290,
+                    easing: 'linear'
+                })
+
+            tl13.add({
+                targets: '.capsule-bottom',
+                translateY: -400,
+                easing: 'linear',
+                delay: 10000
+            })
+                .add({
+                    targets: '.capsule-bottom',
+                    translateY: -465,
+                    scale: 0.4,
+                    easing: 'linear'
+                })
+                .add({
+                    targets: '.capsule-bottom',
+                    translateY: -465,
+                    translateX: -750,
+                    scale: 0.4,
+                    easing: 'linear'
+                })
+                .add({
+                    targets: '.bottle',
+                    translateY: -600,
+                    easing: 'linear'
+                })
+
+
+            // tl3.add({
+            //     targets: '.cells',
+            //     scale: 0,
+            //     delay: 200,
+            //     opacity: 0,
+            //     easing: 'linear'
+            // })
+
+            window.addEventListener('scroll', () => {
+                tl1.seek(tl1.duration * (getScrollPercent() * 0.015))
+                tl2.seek(tl2.duration * (getScrollPercent() * 0.015))
+                tl3.seek(tl3.duration * (getScrollPercent() * 0.015))
+                tl4.seek(tl4.duration * (getScrollPercent() * 0.015))
+                tl5.seek(tl5.duration * (getScrollPercent() * 0.015))
+                tl6.seek(tl6.duration * (getScrollPercent() * 0.015))
+                tl7.seek(tl7.duration * (getScrollPercent() * 0.015))
+                tl8.seek(tl8.duration * (getScrollPercent() * 0.015))
+                tl9.seek(tl9.duration * (getScrollPercent() * 0.015))
+                tl10.seek(tl10.duration * (getScrollPercent() * 0.015))
+                tl11.seek(tl11.duration * (getScrollPercent() * 0.015))
+                tl12.seek(tl12.duration * (getScrollPercent() * 0.015))
+                tl13.seek(tl13.duration * (getScrollPercent() * 0.015))
+
+                if(getScrollPercent()>51.81727242414138){
+                    document.getElementById('cells').style.display="none"
+                }
+                else{
+                    document.getElementById('cells').style.display="block"
+                }
+            })
+        </script>
     </div>
 
     <div class="anim-mobile">
