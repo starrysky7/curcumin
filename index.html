@@ -250,6 +250,7 @@
         <img src="/images/leaf.png" class="leaf" />
         <img src="/images/powder.png" class="powder" />
         <div id="cells"></div>
+        <img src="bg/blood-in.png" class="cells-bg" />
         <img src="/images/capsule-top.png" class="capsule-top" />
         <img src="/images/capsule-bottom.png" class="capsule-bottom" />
         <img src="/images/cap.png" class="cap" />
@@ -258,6 +259,9 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <script>
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+            const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+            
             const backgroundColor = 0x000000;
             var object;
             var i = {
@@ -416,18 +420,21 @@
             }
             //renderCalls.push(renderScene);
 
-            var light = new THREE.PointLight(0xffffcc, 20, 200);
+            var light = new THREE.PointLight(0xffffcc, 5, 200);
             light.position.set(4, 30, -20);
             scene.add(light);
-            scene2.add(light);
 
-            var light2 = new THREE.AmbientLight(0x20202A, 20, 100);
+            var light2 = new THREE.AmbientLight(0x20202A, 10, 100);
             light2.position.set(30, -10, 30);
             scene.add(light2);
 
-            var light3 = new THREE.AmbientLight(0x20202A, 20, 100);
+            var light3 = new THREE.AmbientLight(0x20202A, 4, 100);
             light2.position.set(30, -10, 30);
             scene2.add(light3)
+
+            var light4 = new THREE.PointLight(0xffffcc, 3, 200);
+            light.position.set(4, 30, -20);
+            scene2.add(light4);
 
             /* ////////////////////////////////////////////////////////////////////////// */
 
@@ -439,7 +446,7 @@
             loader.load('/GLTf/GLTf/DNA Strand/Dna Strand.gltf', function (data) {
                 object = data.scene;
                 object.position.set(1.6, 0, 0);
-                object.scale.set(1.2,1.2,1.2)
+                object.scale.set(1.2, 1.2, 1.2)
                 scene.add(object);
             });
             loader.load('/GLTf/GLTf/blood cell/blood cell.gltf', function (data) {
@@ -615,6 +622,8 @@
             const tl11 = anime.timeline({ autoplay: false })
             const tl12 = anime.timeline({ autoplay: false })
             const tl13 = anime.timeline({ autoplay: false })
+            const tl14 = anime.timeline({ autoplay: false })
+            const tl15 = anime.timeline({ autoplay: false })
 
 
             tl1.add({
@@ -623,28 +632,28 @@
                 y: 3,
                 z: -2.5,
                 easing: 'linear',
-                delay:1000,
-                duration:100
+                delay: 1000,
+                duration: 100
             }).add({
                 targets: '#dna',
                 opacity: 0,
                 easing: 'linear',
-                duration:100,
+                duration: 100,
             }).add({
                 targets: '.leaf',
                 opacity: 1,
                 easing: 'linear',
-                duration:100,
+                duration: 100,
             }).add({
                 targets: '.leaf',
                 opacity: 0,
                 easing: 'linear',
-                duration:100
+                duration: 100
             }).add({
                 targets: '.powder',
                 opacity: 1,
                 easing: 'linear',
-                duration:100
+                duration: 100
             }).add({
                 targets: '.powder',
                 opacity: 0,
@@ -653,14 +662,14 @@
                 targets: '#cells',
                 opacity: 1,
                 easing: 'linear',
-                duration:50,
+                duration: 50,
             }).add({
                 targets: obj1_r,
                 x: obj1_r.x + 2,
                 y: 1,
                 z: obj1_r.z + 2,
                 easing: 'linear',
-                duration:200
+                duration: 200
             }).add({
                 targets: obj1_l,
                 x: 2,
@@ -676,14 +685,14 @@
                 z: obj2_r.z + 1,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj2_l,
                 x: 2,
                 y: 0,
                 z: 0,
                 easing: 'linear',
-                duration:100
+                duration: 100
             })
             tl3.add({
                 targets: obj3_r,
@@ -692,7 +701,7 @@
                 z: obj3_r.z + 2,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj3_l,
                 x: 2,
@@ -707,7 +716,7 @@
                 z: obj4_r.z + 1,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj4_l,
                 x: 2,
@@ -722,7 +731,7 @@
                 z: obj5_r.z + 2,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj5_l,
                 x: 2,
@@ -737,7 +746,7 @@
                 z: obj6_r.z + 1,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj6_l,
                 x: 2,
@@ -752,7 +761,7 @@
                 z: obj7_r.z + 2,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj7_l,
                 x: 2,
@@ -767,7 +776,7 @@
                 z: obj8_r.z + 1,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj8_l,
                 x: 2,
@@ -782,7 +791,7 @@
                 z: obj9_r.z + 2,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj9_l,
                 x: 2,
@@ -797,7 +806,7 @@
                 z: obj10_r.z + 1,
                 easing: 'linear',
                 delay: 2500,
-                duration:200
+                duration: 200
             }).add({
                 targets: obj10_l,
                 x: 2,
@@ -819,20 +828,20 @@
 
             tl12.add({
                 targets: '.capsule-top',
-                translateY: 440,
+                translateY: vh-320,
                 easing: 'linear',
                 delay: 10000
             })
                 .add({
                     targets: '.capsule-top',
-                    translateY: 515,
+                    translateY: (vh-320)+75,
                     scale: 0.4,
                     easing: 'linear'
                 })
                 .add({
                     targets: '.capsule-top',
-                    translateY: 515,
-                    translateX: -750,
+                    translateY: (vh-320)+75,
+                    translateX: -(vw/2),
                     scale: 0.4,
                     easing: 'linear'
                 })
@@ -844,20 +853,20 @@
 
             tl13.add({
                 targets: '.capsule-bottom',
-                translateY: -400,
+                translateY: parseInt(-vh+340),
                 easing: 'linear',
                 delay: 10000
             })
                 .add({
                     targets: '.capsule-bottom',
-                    translateY: -465,
+                    translateY: parseInt(-vh+340)-65,
                     scale: 0.4,
                     easing: 'linear'
                 })
                 .add({
                     targets: '.capsule-bottom',
-                    translateY: -465,
-                    translateX: -750,
+                    translateY: parseInt(-vh+340)-65,
+                    translateX: -(vw/2),
                     scale: 0.4,
                     easing: 'linear'
                 })
@@ -868,13 +877,42 @@
                 })
 
 
-            // tl3.add({
-            //     targets: '.cells',
-            //     scale: 0,
-            //     delay: 200,
-            //     opacity: 0,
-            //     easing: 'linear'
-            // })
+            tl14.add({
+                targets: '.section2',
+                translateX: -50,
+                delay: 2000
+            }).add({
+                targets: '.section3',
+                translateX: -50,
+                delay: 500
+            }).add({
+                targets: '.section4',
+                translateX: -50,
+                delay: 500
+            }).add({
+                targets: '.section5',
+                translateX: -50,
+                delay: 500
+            }).add({
+                targets: '.section6',
+                translateX: -50,
+                delay: 500
+            }).add({
+                targets: '.section6',
+                translateX: -50,
+                delay: 500
+            })
+
+            tl15.add({
+                targets: '.cells-bg',
+                opacity: 1,
+                delay: 4000,
+                easing: 'linear'
+            }).add({
+                targets: '.cells-bg',
+                opacity: 0,
+                delay: 300
+            })
 
             window.addEventListener('scroll', () => {
                 tl1.seek(tl1.duration * (getScrollPercent() * 0.015))
@@ -890,12 +928,14 @@
                 tl11.seek(tl11.duration * (getScrollPercent() * 0.015))
                 tl12.seek(tl12.duration * (getScrollPercent() * 0.015))
                 tl13.seek(tl13.duration * (getScrollPercent() * 0.015))
+                tl14.seek(tl14.duration * (getScrollPercent() * 0.01))
+                tl15.seek(tl14.duration * (getScrollPercent() * 0.01))
 
-                if(getScrollPercent()>51.81727242414138){
-                    document.getElementById('cells').style.display="none"
+                if (getScrollPercent() > 51.81727242414138) {
+                    document.getElementById('cells').style.display = "none"
                 }
-                else{
-                    document.getElementById('cells').style.display="block"
+                else {
+                    document.getElementById('cells').style.display = "block"
                 }
             })
         </script>
